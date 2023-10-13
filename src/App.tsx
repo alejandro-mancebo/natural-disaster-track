@@ -1,13 +1,15 @@
-import './App.css'
+import { Header } from './components/header';
+import { MapComponent } from './components/map';
+
+import './App.css';
 
 function App() {
-
-
   return (
     <>
-      <h1>Natural Desaster Track</h1>
+      <Header />
+      <MapComponent />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

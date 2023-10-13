@@ -1,5 +1,5 @@
 {
-  "name": "natural-desaster-track",
+  "name": "natural-disaster-track",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,12 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4",
+    "leaflet-zoombox": "^0.5.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.47.0",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-cluster": "^2.1.0",
+    "react-leaflet-draw": "^0.20.4",
+    "react-select": "^5.7.7",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.6",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/uuid": "^9.0.5",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",

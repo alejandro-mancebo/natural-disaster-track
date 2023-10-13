@@ -1,6 +1,170 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* padding: 0 2rem; */
+  /* text-align: center; */
+}
+
+
+.leaflet-container { 
+  width: 100vw;
+  height: calc(98vh - 4.5rem); 
+}
+
+.header {
+  padding-left: 4rem;
+}
+
+
+.disaster-list,
+.board
+{
+  position: absolute;
+  z-index: 1000;
+}
+
+.categorySelect {
+  z-index: 600;
+}
+
+.disaster-list {
+  top: 4.8rem;
+  left: 4rem;
+  padding-top: .6rem;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: .7rem;
+  width: 17rem;
+  border-radius: .7rem;
+  border: 1px solid #a3a3a3;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.board {
+  top: 4.8rem; 
+  right: 4rem;
+  padding: 0;
+  border-radius: .7rem;
+}
+
+.board-header,
+.disaster-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+}
+
+.board-form
+{
+  margin-top: 1.5rem;
+}
+
+.board-button,
+.disaster-list-button {
+  padding: 0rem;
+  line-height: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.data-input
+{
+  width: 18rem;
+  padding: .6rem 1rem;
+  border: 2px solid #D5D5D5;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.checkbox-container {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #D5D5D5;
+}
+
+.data-input {
+  border-radius: .7rem;
+}
+
+.disaster-list-header
+ {
+  margin-top: .1rem;
+  height: 1.5rem;
+ }
+
+.disaster-list-button {
+  margin-right: 1rem;
+}
+
+.board-header h3,
+.disaster-list-header h3{
+  margin: 0rem; 
+}
+
+.scroll-bar {
+  overflow-y: scroll;
+  max-height: 45rem;
+  margin-top: 1.5rem;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: .3rem .7rem;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border-radius: .3rem;
+  border: 1px solid #A5A5A5;
+}
+
+input[type=checkbox] {
+  margin-right: .5rem;
+}
+
+button {
+  padding: .3rem 2rem;
+  margin: 8px 0;
+  font-size: 1.2rem;
+  border-radius: .3rem;
+  border: 1px solid #A5A5A5;
+}
+
+button:hover {
+  background-color: #AAD3DF;
+  cursor: pointer;
+}
+
+.marker-popup-card {
+  line-height: .25;
+}
+
+.active {
+color: red;
+}
+
+/* .marker-type-1 {
+  color: blue;
+}
+
+.marker-type-2 {
+  color: green;
+} */
+
+.disaster-marker {
+  cursor: pointer;
+ 
+}
+
+.disaster-marker:hover {
+  background-color: #b7d7d7;
+}
+
+.custom-marker {
+  background-color: blue;
+}
+
+.custom-marker:hover {
+ transform: size(1.1);
 }
