@@ -6,7 +6,7 @@ interface Props {
 
 
 export const MarkerPopupCard = ({ marker }: Props) => {
-  console.log('MarkerPopupCard', marker);
+  // console.log('MarkerPopupCard', marker);
   return (
     <div className="marker-popup-card">
       <h3>{marker.locationName}</h3>

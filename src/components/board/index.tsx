@@ -21,7 +21,6 @@ interface Props {
   setShowMarkers: (showMarkers: boolean) => void;
   showDisasterList: boolean;
   setShowDisasterList: (showDisasterList: boolean) => void;
-
 }
 
 export const Board = ({
@@ -65,18 +64,17 @@ export const Board = ({
     const dataDisaster = localStorage.getItem('disasterData');
     // console.log('dataDisaster initial', dataDisaster?.length)
 
-    let idNumber: number = 0
-    if (dataDisaster !== null) {
-      idNumber = dataDisaster.length + 1;
-    } else {
-      idNumber = 1;
-    }
+    // let idNumber: number;
+    // if (dataDisaster !== null) {
+    //   idNumber = dataDisaster.length + 1;
+    // } else {
+    //   idNumber = 1;
+    // }
 
     const objectAddress: Disaster = {
       _id: newMarker['_id'],
       locationName: data.locationName,
       coords: newMarker['coords'],
-      // markerObject: newMarker['markerObject'],
       category: data.category,
       description: data.description
     }

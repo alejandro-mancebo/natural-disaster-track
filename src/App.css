@@ -3,8 +3,8 @@
   margin: 0 auto;
   /* padding: 0 2rem; */
   /* text-align: center; */
+  --top-position: 5.5rem;
 }
-
 
 .leaflet-container { 
   width: 100vw;
@@ -12,14 +12,46 @@
 }
 
 .header {
-  padding-left: 4rem;
+  display: flex;
+  padding-left: .5rem;
+  padding-right: 1rem;
+  align-items: center;
 }
 
+.logo {
+  cursor: pointer;
+  border: 1px solid #D5D5D5;
+  padding: .3rem .8rem;
+  border-radius: .3rem;
+}
+
+.logo:hover { 
+  color: blue;
+  border: 1px solid #D5D5D5;
+}
+
+nav ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.mobile {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
 
 .disaster-list,
 .board
 {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
 }
 
@@ -28,8 +60,8 @@
 }
 
 .disaster-list {
-  top: 4.8rem;
-  left: 4rem;
+  top: 5.5em;
+  left: .1rem;
   padding-top: .6rem;
   padding-right: 0;
   padding-bottom: 1rem;
@@ -42,8 +74,8 @@
 }
 
 .board {
-  top: 4.8rem; 
-  right: 4rem;
+  bottom: 2.5rem; 
+  right: .1rem;
   padding: 0;
   border-radius: .7rem;
 }
@@ -56,8 +88,7 @@
   height: 2rem;
 }
 
-.board-form
-{
+.board-form {
   margin-top: 1.5rem;
 }
 
@@ -69,8 +100,7 @@
   width: 1.5rem;
 }
 
-.data-input
-{
+.data-input {
   width: 18rem;
   padding: .6rem 1rem;
   border: 2px solid #D5D5D5;
@@ -144,17 +174,8 @@ button:hover {
 color: red;
 }
 
-/* .marker-type-1 {
-  color: blue;
-}
-
-.marker-type-2 {
-  color: green;
-} */
-
 .disaster-marker {
   cursor: pointer;
- 
 }
 
 .disaster-marker:hover {
@@ -162,9 +183,45 @@ color: red;
 }
 
 .custom-marker {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .custom-marker:hover {
  transform: size(1.1);
 }
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {
+
+  .board {
+    bottom: 2rem;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+/* @media only screen and (min-width: 48em) {
+
+} */
+
+/* Large devices such as laptops (1024px and up) */
+/* @media only screen and (min-width: 64em) {
+  
+} */
+
+/* Largest devices such as desktops (1280px and up) */
+/* @media only screen and (min-width: 80em) {
+  
+} */

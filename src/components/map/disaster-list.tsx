@@ -5,12 +5,12 @@ import { difaultMarkers } from '../../data/defaultMarkers'
 
 interface Props {
   showDisasterList: boolean;
-  selectDisaster: string;
-  setSelectDisaster: (selectDisaster: string) => void;
+  selectDisasterMarker: any;
+  setSelectDisasterMarker: (selectDisasterMarker: any) => void;
 }
 
 
-export const DisasterList = ({ showDisasterList, selectDisaster, setSelectDisaster }: Props) => {
+export const DisasterList = ({ showDisasterList, selectDisasterMarker, setSelectDisasterMarker }: Props) => {
 
   const [hide, setHide] = useState(false);
   const [markers, setMarkers] = useState<Disaster[]>();
@@ -49,8 +49,8 @@ export const DisasterList = ({ showDisasterList, selectDisaster, setSelectDisast
                 {markers.map((marker, index) => (
                   <div
                     key={index}
-                    className={`disaster-marker ${marker._id === selectDisaster ? "active" : null}`}
-                    onClick={() => setSelectDisaster(marker._id)}>
+                    className={`disaster-marker ${marker._id === selectDisasterMarker._id ? "active" : null}`}
+                    onClick={() => setSelectDisasterMarker(marker)}>
                     <hr />
                     <div>{marker._id}</div>
                     <div>{marker.locationName}</div>
