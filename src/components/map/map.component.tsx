@@ -7,10 +7,10 @@ import L from 'leaflet';
 import { v4 as uuidv4 } from 'uuid';
 
 import { Board } from '../board';
-import { DisasterList } from './disaster-list';
+import { DisasterList } from './disasterList';
 import { MarkerCoords, Disaster } from '../../Types';
 import { difaultMarkers } from '../../data/defaultMarkers'
-import iconMarker from '../../assets/marker-v1.png'
+import iconMarker from '../../assets/marker_v1.png'
 
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-draw/dist/leaflet.draw.css';

@@ -1,2 +1,2 @@
 export { MapComponent } from './map.component';
-export { DisasterList } from './disaster-list';
+export { DisasterList } from './disasterList';
