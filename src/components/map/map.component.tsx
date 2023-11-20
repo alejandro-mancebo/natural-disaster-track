@@ -84,7 +84,7 @@ export const MapComponent = ({ selectMyLocation }: Props) => {
         zoom={ZOOM_LEVEL}
         scrollWheelZoom={true}
         minZoom={4}
-        zoomControl={true}
+        zoomControl={false}
       >
         <FeatureGroup>
           <EditControl
