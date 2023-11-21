@@ -86,7 +86,7 @@ export const MapComponent = ({ selectMyLocation }: Props) => {
         minZoom={4}
         zoomControl={false}
       >
-        {/* <FeatureGroup>
+        <FeatureGroup>
           <EditControl
             position='topright'
             onCreated={(e) => created(e)}
@@ -98,7 +98,7 @@ export const MapComponent = ({ selectMyLocation }: Props) => {
               circlemarker: false
             }}
           />
-        </FeatureGroup> */}
+        </FeatureGroup>
 
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
