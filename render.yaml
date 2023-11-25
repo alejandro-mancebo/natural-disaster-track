@@ -10,15 +10,15 @@ services:
     #     - backend/**
     # buildCommand: npm run build
     startCommand: cd backend; npm run start --filter=backend
-    envVars: 
-      - key: AUTH_SERVER_PORT
-        value: 5000
-      - key:  MONGO_DB_CLOUD_URL
-        value: mongodb+srv://devittaylor:lTyVjZw3DJEKkYSM@cluster0.3ttkxgj.mongodb.net/natural-disaster-track?retryWrites=true&w=majority
-      - key: ACCESS_TOKEN_SECRET
-        value: f9202cba956f40c9129688bcb77a6d42a1f475b49bff39c88e159a08037957e420b680b33de365420870c02d7ea1af523acbbca307bb30d2c56cb7abc446f805
-      - key: REFRESH_TOKEN_SECRET
-        value: 3165ef748a8ca5ffe842fe0ff5fcd9cb9b9d3fdb3d004121dda5fecd4de84c814e03c09d65db49b6aea87ea380082eeb0bb8b2ab1f42d760cc48f82402ea0f59
+    # envVars: 
+    #   - key: AUTH_SERVER_PORT
+    #     value: 5000
+    #   - key:  MONGO_DB_CLOUD_URL
+    #     value: mongodb+srv://devittaylor:lTyVjZw3DJEKkYSM@cluster0.3ttkxgj.mongodb.net/natural-disaster-track?retryWrites=true&w=majority
+    #   - key: ACCESS_TOKEN_SECRET
+    #     value: f9202cba956f40c9129688bcb77a6d42a1f475b49bff39c88e159a08037957e420b680b33de365420870c02d7ea1af523acbbca307bb30d2c56cb7abc446f805
+    #   - key: REFRESH_TOKEN_SECRET
+    #     value: 3165ef748a8ca5ffe842fe0ff5fcd9cb9b9d3fdb3d004121dda5fecd4de84c814e03c09d65db49b6aea87ea380082eeb0bb8b2ab1f42d760cc48f82402ea0f59
 
   # A static web (frontend)
   - type: web
@@ -32,10 +32,10 @@ services:
     buildCommand: npm run build --filter=frontend
     startCommand: cd frontend; npm run dev
     # staticPublicPath: ./dist
-    routes: 
-      - type: rewrite
-        source: /*
-        destination: /index.html
+    # routes: 
+    #   - type: rewrite
+    #     source: /*
+    #     destination: /index.html
     # envVars:
     #   - key: BASE_URL
     #     value: ittaylor-api-ndt.onrender.com
