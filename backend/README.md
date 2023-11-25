@@ -1,3 +1,3 @@
-# [JWS Authentication](https://github.com/alejandro-mancebo/jwt-authentication/blob/main/README.md)
+# [Natural Disaster Tracker](https://github.com/alejandro-mancebo/natural-disaster-track/blob/main/README.md)
 
-## Server folder
+## Backend folder
