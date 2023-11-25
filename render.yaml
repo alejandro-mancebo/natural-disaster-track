@@ -9,7 +9,7 @@ services:
     #   paths: 
     #     - backend/**
     # buildCommand: npm run build
-    startCommand: cd backend; npm run start --filter=backend
+    startCommand: cd backend; npm run start 
     # envVars: 
     #   - key: AUTH_SERVER_PORT
     #     value: 5000
@@ -25,11 +25,11 @@ services:
     name: ndt-prod-frontend1
     env: static
     # runtime: static
-    repo: https://github.com/alejandro-mancebo/natural-disaster-track.git
+    # repo: https://github.com/alejandro-mancebo/natural-disaster-track.git
     buildFilter:
       paths: 
         - frontend/**
-    buildCommand: npm run build --filter=frontend
+    buildCommand: npm run build 
     startCommand: cd frontend; npm run dev
     # staticPublicPath: ./dist
     # routes: 
