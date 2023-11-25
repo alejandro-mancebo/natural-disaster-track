@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const URL = import.meta.env.BASE_URL
-  ? import.meta.env.BASE_URL
-  : 'http://localhost:5000'
+
+// const URL = 'http://localhost:5000';
+const URL = 'https://ittaylor-api-ndt.onrender.com';
 
 export const axiosPublic = axios.create({
   baseURL: URL
