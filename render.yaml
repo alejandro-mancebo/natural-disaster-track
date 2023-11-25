@@ -2,7 +2,6 @@ services:
   # A Node service (backend)
   - type: web
     name: ndt-prod-backend1
-    env: node
     runtime: node
     repo: https://github.com/alejandro-mancebo/natural-disaster-track.git
     buildFilter:
@@ -23,7 +22,6 @@ services:
   # A static web (frontend)
   - type: web
     name: ndt-prod-frontend1
-    env: static
     runtime: static
     repo: https://github.com/alejandro-mancebo/natural-disaster-track.git
     buildFilter:
