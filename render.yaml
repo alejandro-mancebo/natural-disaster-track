@@ -26,9 +26,9 @@ services:
     env: static
     # runtime: static
     # repo: https://github.com/alejandro-mancebo/natural-disaster-track.git
-    buildFilter:
-      paths: 
-        - frontend/**
+    # buildFilter:
+    #   paths: 
+    #     - frontend/**
     buildCommand: npm run build 
     startCommand: cd frontend; npm run dev
     # staticPublicPath: ./dist
