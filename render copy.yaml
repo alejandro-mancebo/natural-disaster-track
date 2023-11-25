@@ -3,7 +3,7 @@ services:
   - type: web
     name: ndt-prod-backend1
     runtime: node
-    repo: https://github.com/alejandro-mancebo/natural-disaster-track.git
+    # repo: https://github.com/alejandro-mancebo/natural-disaster-track.git
     buildFilter:
       paths: 
         - backend/**
