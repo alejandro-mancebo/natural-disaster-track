@@ -31,7 +31,7 @@ services:
         - frontend/**
     buildCommand: npm run build --filter=frontend
     startCommand: cd frontend; npm run dev
-    staticPublicPath: ./frontend
+    staticPublicPath: ./dist
     routes: 
       - type: rewrite
         source: /*
