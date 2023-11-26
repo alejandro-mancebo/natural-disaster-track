@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, Link, useNavigate, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { axiosPrivate } from '../../api/axios';
 
@@ -17,7 +17,9 @@ export const Header = ({ selectMyLocation, setSelectMyLocation }: Props) => {
   const usernameStore = localStorage.getItem('username') || '';
 
   const location = useLocation();
-  console.log(location)
+  const navigate = useNavigate();
+
+  // console.log(location)
 
   useEffect(() => {
     if (Object.keys(auth).length !== 0) {
@@ -58,7 +60,8 @@ export const Header = ({ selectMyLocation, setSelectMyLocation }: Props) => {
           localStorage.removeItem('persist');
           // localStorage.removeItem('isLoading');
           localStorage.removeItem('username');
-          window.location.reload();
+          navigate('/');
+          // window.location.reload();
         }
       })
       .catch((errors) => {
@@ -101,7 +104,7 @@ export const Header = ({ selectMyLocation, setSelectMyLocation }: Props) => {
         {!isAuth ?
           <>
             <NavLink className="px-5 " to="/signup">Sign Up</NavLink>
-            <NavLink className="px-5" to="/Login">Login</NavLink>
+            <NavLink className="px-5" to="/login">Login</NavLink>
           </>
           : null
         }

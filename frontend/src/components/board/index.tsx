@@ -35,6 +35,8 @@ export const Board = ({
   const [, setDisaster] = useState<Disaster>()
   const [hide, setHide] = useState(false);
 
+
+
   const form = useForm<Disaster>({
     defaultValues: {
       locationName: '',
@@ -111,7 +113,7 @@ export const Board = ({
           //   text: "You are register successfully!",
           // });
           // navigate("/login");
-          console.log(response);
+          // console.log(response);
         }
       })
       .catch((error) => {
@@ -137,7 +139,7 @@ export const Board = ({
     reset();
     field.value = '';
 
-    window.location.reload();
+    // window.location.reload();
 
   }
 

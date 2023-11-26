@@ -61,14 +61,14 @@ export const MapComponent = ({ selectMyLocation }: Props) => {
     })
       .then((response) => {
         setMarkerList(response.data);
-        console.log('locations', response.data)
+        // console.log('locations', response.data)
 
       })
       .catch(error => {
         console.error('[Users page] Get users error:', error);
       })
 
-  }, [])
+  }, [markerList])
 
 
 
