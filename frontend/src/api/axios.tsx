@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-const URL = 'http://localhost:5000';
-//const URL = 'https://ittaylor-api-ndt.onrender.com:5000';
+// const URL = 'http://localhost:5000';
+const URL = 'https://ittaylor-api-ndt.onrender.com';
 
 export const axiosPublic = axios.create({
   baseURL: URL
